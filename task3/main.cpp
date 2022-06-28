@@ -33,11 +33,11 @@ int main() {
   std::string str;
   std::getline(std::cin, str);
 
-  int count = 0;
+  long long c = 0;
   std::vector<int> palindromes = even_pallys(str);
-  for (int i = 0; i < palindromes.size(); i++) count += palindromes[i] - 1;
+  for (int i = 0; i < palindromes.size(); i++) c += palindromes[i] - 1;
   palindromes = odd_pallys(str);
-  for (int i = 0; i < palindromes.size(); i++) count += palindromes[i];
-  std::cout << count;
+  for (int i = 0; i < palindromes.size(); i++) c += palindromes[i];
+  std::cout << c;
   return 0;
 }
