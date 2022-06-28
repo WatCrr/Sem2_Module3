@@ -29,7 +29,7 @@ std::vector<int> odd_pallys(const std::string& str) {
   return result;
 }
 
-long long count_palindromes(std::string str) {
+long long count_palindromes(const std::string& str) {
   long long c = 0;
   std::vector<int> palindromes = even_pallys(str);
   for (int i = 0; i < palindromes.size(); i++) c += palindromes[i] - 1;
